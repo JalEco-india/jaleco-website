@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>JalEco | Eco-Friendly Paper Bottles</title>
+<title>EcoBottle | Sustainable Paper Bottles</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="JalEco - Eco-friendly paper bottle manufacturer in Nagpur. Bulk supply, custom bottles, sustainable packaging.">
-<meta name="keywords" content="paper bottle, eco bottle, sustainable packaging, JalEco, green bottles, Nagpur manufacturer">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -37,13 +36,14 @@ object-fit:cover;
 opacity:.35;
 }
 
-/* IMAGE BACKGROUND */
+/* IMAGE PARALLAX BACKGROUND */
 .image-bg{
 position:fixed;
 inset:0;
-background:url("Earth.jpg") center/cover no-repeat;
+background:url("<img src="c922d17cb602100064ea28536dee6afa.jpg">") center/cover no-repeat;
 z-index:-4;
 opacity:.25;
+transition:all .2s linear;
 }
 
 /* OVERLAY */
@@ -79,7 +79,9 @@ text-decoration:none;
 font-weight:500;
 }
 
-nav a:hover{color:#69f0ae;}
+nav a:hover{
+color:#69f0ae;
+}
 
 /* HERO */
 .hero{
@@ -90,7 +92,9 @@ align-items:center;
 justify-content:space-between;
 }
 
-.hero-text{max-width:560px;}
+.hero-text{
+max-width:560px;
+}
 
 .hero-text h2{
 font-size:55px;
@@ -111,14 +115,22 @@ color:#000;
 border-radius:40px;
 text-decoration:none;
 font-weight:600;
-border:none;
-cursor:pointer;
 }
 
-.btn:hover{background:#00e676;}
+.btn:hover{
+background:#00e676;
+}
 
 /* 3D BOTTLE */
-.bottle-3d{width:380px;}
+.bottle-3d{
+width:380px;
+animation:spin 20s infinite linear;
+}
+
+@keyframes spin{
+from{transform:rotateY(0deg);}
+to{transform:rotateY(360deg);}
+}
 
 .bottle-3d img{
 width:100%;
@@ -162,17 +174,13 @@ box-shadow:0 15px 35px rgba(0,0,0,.15);
 transition:.4s;
 }
 
-.card:hover{transform:translateY(-12px) scale(1.03);}
+.card:hover{
+transform:translateY(-12px) scale(1.03);
+}
 
-.card h3{color:#2e7d32;margin-bottom:10px;}
-
-/* FORM */
-form input,form textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:8px;
-border:1px solid #ccc;
+.card h3{
+color:#2e7d32;
+margin-bottom:10px;
 }
 
 /* FLOAT BUTTON */
@@ -211,9 +219,17 @@ padding:25px;
 }
 
 @media(max-width:900px){
-.hero{flex-direction:column;text-align:center;}
-.bottle-3d{margin-top:40px;width:280px;}
+.hero{
+flex-direction:column;
+text-align:center;
 }
+
+.bottle-3d{
+margin-top:40px;
+width:280px;
+}
+}
+
 </style>
 </head>
 
@@ -226,16 +242,18 @@ padding:25px;
 </video>
 </div>
 
-<div class="image-bg"></div>
+<!-- IMAGE -->
+<div class="image-bg" id="imgBg"></div>
+
+<!-- OVERLAY -->
 <div class="overlay"></div>
 
 <header>
-<h1>JalEco</h1>
+<h1>EcoBottle</h1>
 <nav>
 <a href="#products">Products</a>
 <a href="#industries">Industries</a>
 <a href="#features">Sustainability</a>
-<a href="#order">Order</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
@@ -245,95 +263,101 @@ padding:25px;
 
 <div class="hero-text">
 <h2>Not Just a Bottle.<br>A Promise to Earth.</h2>
-<p>India’s trusted eco-friendly paper bottle manufacturer.</p>
-<a href="#order" class="btn">Order Now</a>
+
+<p>
+India’s trusted eco-friendly paper bottle manufacturer for sustainable brands.
+</p>
+
+<a href="#contact" class="btn">Get Bulk Quote</a>
 </div>
 
 <div class="bottle-3d" id="bottle">
 <img src="c922d17cb602100064ea28536dee6afa.jpg">
+  <img src="Earth.jpg">
 </div>
 
 </section>
 
 <!-- PRODUCTS -->
 <section id="products">
+
 <div class="section-title"><h2>Our Products</h2></div>
 <div class="section-line"></div>
+
 <div class="grid">
-<div class="card"><h3>500ml Bottle</h3><p>Daily use eco bottle</p></div>
-<div class="card"><h3>750ml Bottle</h3><p>Premium packaging</p></div>
-<div class="card"><h3>Custom Print</h3><p>Branding solution</p></div>
+
+<div class="card">
+<h3>500ml Classic</h3>
+<p>Daily hydration solution.</p>
 </div>
+
+<div class="card">
+<h3>750ml Premium</h3>
+<p>Events & hospitality.</p>
+</div>
+
+<div class="card">
+<h3>Custom Bottles</h3>
+<p>Brand printing.</p>
+</div>
+
+</div>
+
 </section>
 
 <!-- INDUSTRIES -->
 <section id="industries">
-<div class="section-title"><h2>Industries</h2></div>
+
+<div class="section-title"><h2>Industries We Serve</h2></div>
 <div class="section-line"></div>
+
 <div class="grid">
+
 <div class="card">🏨 Hotels</div>
 <div class="card">🎪 Events</div>
 <div class="card">🏢 Corporate</div>
 <div class="card">🛒 Retail</div>
+
 </div>
+
 </section>
 
 <!-- FEATURES -->
 <section id="features">
+
 <div class="section-title"><h2>Sustainability</h2></div>
 <div class="section-line"></div>
+
 <div class="grid">
+
 <div class="card">🌱 Renewable</div>
 <div class="card">♻ Compostable</div>
 <div class="card">🌍 Low Carbon</div>
 <div class="card">🧪 Food Safe</div>
-</div>
-</section>
 
-<!-- ORDER FORM -->
-<section id="order">
-<div class="section-title"><h2>Order Form</h2></div>
-<div class="section-line"></div>
-<div class="grid">
-<div class="card">
-<form action="https://formspree.io/f/xwkgpjrq" method="POST">
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Email" required>
-<input type="text" name="phone" placeholder="Phone" required>
-<input type="number" name="quantity" placeholder="Quantity" required>
-<textarea name="message" placeholder="Your Requirement"></textarea>
-<button class="btn" type="submit">Submit Order</button>
-</form>
 </div>
-</div>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
+
 <div class="section-title"><h2>Contact</h2></div>
 <div class="section-line"></div>
+
 <div class="grid">
+
 <div class="card">
 📧 vilaspaunikar9999@gmail.com<br><br>
-📱 +91 7020230372<br><br>
-📍 Nagpur, Maharashtra
+📱 +91 7020230372
 </div>
-</div>
-</section>
 
-<!-- SEO INFO -->
-<section>
-<div class="section-title"><h2>Google Ranking Support</h2></div>
-<div class="section-line"></div>
-<div class="grid">
-<div class="card">
-<p>✔ SEO optimized website<br>✔ Mobile friendly<br>✔ Fast loading<br>✔ Google search ready</p>
 </div>
-</div>
+
 </section>
 
 <footer>
-© 2026 JalEco | Eco Packaging Solutions
+© 2026 EcoBottle | Green Future Packaging
 </footer>
 
 <!-- FLOAT -->
@@ -342,14 +366,32 @@ padding:25px;
 <a class="email" href="mailto:vilaspaunikar9999@gmail.com">✉</a>
 </div>
 
+<!-- EFFECTS -->
 <script>
+
+/* 3D Bottle */
 const bottle=document.getElementById("bottle");
 
 document.addEventListener("mousemove",e=>{
 const x=(window.innerWidth/2-e.pageX)/25;
 const y=(window.innerHeight/2-e.pageY)/25;
-bottle.style.transform=`rotateY(${x}deg) rotateX(${y}deg)`;
+
+bottle.style.transform=
+`rotateY(${x}deg) rotateX(${y}deg)`;
 });
+
+
+/* Parallax Image */
+const imgBg=document.getElementById("imgBg");
+
+document.addEventListener("mousemove",e=>{
+const x=e.clientX/50;
+const y=e.clientY/50;
+
+imgBg.style.backgroundPosition=
+`${50+x}% ${50+y}%`;
+});
+
 </script>
 
 </body>
