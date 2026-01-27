@@ -2,301 +2,395 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>EcoBottle | Sustainable Paper Bottles Manufacturer</title>
+<title>EcoBottle | Sustainable Paper Bottles</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-  background:#0b2a1c;
-  color:#ffffff;
-  overflow-x:hidden;
+background:#051a12;
+color:#fff;
+overflow-x:hidden;
 }
 
 /* VIDEO BACKGROUND */
 .video-bg{
-  position:fixed;
-  inset:0;
-  z-index:-3;
-  background:linear-gradient(135deg,#0b2a1c,#114d2e);
+position:fixed;
+inset:0;
+z-index:-5;
 }
+
 .video-bg video{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  opacity:.45;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:.35;
 }
 
-/* 3D BLOBS */
-.bg-3d{
-  position:fixed;
-  inset:0;
-  z-index:-2;
-  perspective:1200px;
+/* IMAGE PARALLAX BACKGROUND */
+.image-bg{
+position:fixed;
+inset:0;
+background:url("Earth.jpg") center/cover no-repeat;
+z-index:-4;
+opacity:.25;
+transition:all .2s linear;
 }
-.blob{
-  position:absolute;
-  width:420px;
-  height:420px;
-  border-radius:50%;
-  background:linear-gradient(135deg,#66bb6a,#1b5e20);
-  filter:blur(90px);
-  opacity:.35;
-  animation:float 22s infinite alternate ease-in-out;
-}
-.blob.one{top:-120px;left:-120px;}
-.blob.two{bottom:-150px;right:-120px;animation-delay:7s;}
-.blob.three{top:50%;left:60%;width:300px;height:300px;animation-delay:14s;}
 
-@keyframes float{
-  from{transform:translateZ(0) translateY(0);}
-  to{transform:translateZ(180px) translateY(-100px);}
+/* OVERLAY */
+.overlay{
+position:fixed;
+inset:0;
+background:linear-gradient(135deg,#04150f,#0b3a27);
+z-index:-3;
+opacity:.85;
 }
 
 /* HEADER */
 header{
-  padding:22px 10%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  position:sticky;
-  top:0;
-  backdrop-filter:blur(10px);
-  z-index:10;
+padding:22px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+backdrop-filter:blur(10px);
+z-index:10;
 }
-header h1{font-size:30px;color:#e8f5e9;}
+
+header h1{
+font-size:32px;
+color:#b9f6ca;
+}
+
 nav a{
-  color:#e8f5e9;
-  margin-left:22px;
-  text-decoration:none;
-  font-weight:500;
+color:#e0f2f1;
+margin-left:22px;
+text-decoration:none;
+font-weight:500;
 }
-nav a:hover{color:#81c784;}
+
+nav a:hover{
+color:#69f0ae;
+}
 
 /* HERO */
 .hero{
-  min-height:100vh;
-  padding:0 10%;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+min-height:100vh;
+padding:0 10%;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
-.hero-text{max-width:560px;}
+
+.hero-text{
+max-width:560px;
+}
+
 .hero-text h2{
-  font-size:54px;
-  line-height:1.2;
-  margin-bottom:20px;
+font-size:55px;
+margin-bottom:20px;
+line-height:1.2;
 }
+
 .hero-text p{
-  font-size:18px;
-  color:#dcedc8;
-  margin-bottom:30px;
+font-size:18px;
+color:#c8e6c9;
+margin-bottom:30px;
 }
+
 .btn{
-  padding:14px 38px;
-  background:#43a047;
-  color:#fff;
-  border-radius:40px;
-  text-decoration:none;
-  font-weight:600;
+padding:14px 38px;
+background:#2ecc71;
+color:#000;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
 }
-.btn:hover{background:#2e7d32;}
+
+.btn:hover{
+background:#00e676;
+}
 
 /* 3D BOTTLE */
 .bottle-3d{
-  width:380px;
-  animation:spin 18s infinite linear;
-  transition:transform .1s;
-}
-@keyframes spin{
-  from{transform:rotateY(0deg);}
-  to{transform:rotateY(360deg);}
-}
-.bottle-3d img{
-  width:100%;
-  filter:drop-shadow(0 45px 70px rgba(0,0,0,.7));
+width:380px;
+animation:spin 20s infinite linear;
 }
 
-/* SECTION BASE */
+@keyframes spin{
+from{transform:rotateY(0deg);}
+to{transform:rotateY(360deg);}
+}
+
+.bottle-3d img{
+width:100%;
+filter:drop-shadow(0 40px 60px rgba(0,0,0,.7));
+}
+
+/* SECTIONS */
 section{
-  padding:90px 10%;
-  background:#f5f9f7;
-  color:#1b3a2f;
+padding:90px 10%;
+background:#f4fbf7;
+color:#13342a;
 }
+
 .section-title h2{
-  text-align:center;
-  font-size:36px;
-  margin-bottom:15px;
+text-align:center;
+font-size:36px;
+margin-bottom:15px;
 }
+
 .section-line{
-  width:90px;
-  height:4px;
-  background:#43a047;
-  margin:0 auto 40px;
-  border-radius:5px;
+width:90px;
+height:4px;
+background:#00c853;
+margin:0 auto 40px;
+border-radius:5px;
 }
 
 /* GRID */
 .grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
 }
+
 .card{
-  background:#fff;
-  padding:35px;
-  border-radius:25px;
-  text-align:center;
-  box-shadow:0 20px 45px rgba(0,0,0,.15);
-  transition:.4s;
+background:#fff;
+padding:35px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+transition:.4s;
 }
-.card:hover{transform:translateY(-12px);}
-.card h3{color:#2e7d32;margin-bottom:10px;}
 
-/* FLOATING BUTTONS */
+.card:hover{
+transform:translateY(-12px) scale(1.03);
+}
+
+.card h3{
+color:#2e7d32;
+margin-bottom:10px;
+}
+
+/* FLOAT BUTTON */
 .floating{
-  position:fixed;
-  right:22px;
-  bottom:22px;
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-  z-index:50;
+position:fixed;
+right:22px;
+bottom:22px;
+display:flex;
+flex-direction:column;
+gap:14px;
+z-index:50;
 }
-.floating a{
-  width:56px;
-  height:56px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  font-size:26px;
-  text-decoration:none;
-  box-shadow:0 15px 30px rgba(0,0,0,.35);
-}
-.whatsapp{background:#25D366;}
-.email{background:#d93025;}
 
-footer{
-  background:#0b2a1c;
-  color:#e8f5e9;
-  text-align:center;
-  padding:25px;
+.floating a{
+width:56px;
+height:56px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#fff;
+font-size:26px;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.4);
 }
+
+.whatsapp{background:#25D366;}
+.email{background:#e53935;}
+
+/* FOOTER */
+footer{
+background:#02130d;
+color:#b9f6ca;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:900px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.bottle-3d{
+margin-top:40px;
+width:280px;
+}
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- VIDEO BACKGROUND (100% WORKING) -->
+<!-- VIDEO -->
 <div class="video-bg">
-  <video autoplay muted loop playsinline>
-    <source src="https://cdn.pixabay.com/video/2020/08/09/46848-451404444_large.mp4" type="video/mp4">
-  </video>
+<video autoplay muted loop playsinline>
+<source src="https://cdn.pixabay.com/video/2020/08/09/46848-451404444_large.mp4" type="video/mp4">
+</video>
 </div>
 
-<!-- BACKGROUND BLOBS -->
-<div class="bg-3d">
-  <div class="blob one"></div>
-  <div class="blob two"></div>
-  <div class="blob three"></div>
-</div>
+<!-- IMAGE -->
+<div class="image-bg" id="imgBg"></div>
+
+<!-- OVERLAY -->
+<div class="overlay"></div>
 
 <header>
-  <h1>EcoBottle</h1>
-  <nav>
-    <a href="#products">Products</a>
-    <a href="#industries">Industries</a>
-    <a href="#features">Sustainability</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<h1>EcoBottle</h1>
+<nav>
+<a href="#products">Products</a>
+<a href="#industries">Industries</a>
+<a href="#features">Sustainability</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
 <!-- HERO -->
-<section class="hero" id="home">
-  <div class="hero-text">
-    <h2>India’s Trusted Eco Bottle Manufacturer</h2>
-    <p>We manufacture premium eco-friendly paper bottles in Nagpur, Maharashtra for bulk buyers, brands, and distributors.</p>
-    <a href="#contact" class="btn">Get Bulk Quote</a>
-  </div>
-  <img src="c8036a4699f53dfc15ec88cafb2dc512.jpg" alt="Paper Bottle">
-</section>
+<section class="hero">
 
+<div class="hero-text">
+<h2>Not Just a Bottle.<br>A Promise to Earth.</h2>
+
+<p>
+India’s trusted eco-friendly paper bottle manufacturer for sustainable brands.
+</p>
+
+<a href="#contact" class="btn">Get Bulk Quote</a>
+</div>
+
+<div class="bottle-3d" id="bottle">
+<img src="c8036a4699f53dfc15ec88cafb2dc512.jpg">
+</div>
+
+</section>
 
 <!-- PRODUCTS -->
 <section id="products">
-  <div class="section-title"><h2>Our Products</h2></div>
-  <div class="section-line"></div>
-  <div class="grid">
-    <div class="card"><h3>500ml Classic</h3><p>Perfect for daily hydration.</p></div>
-    <div class="card"><h3>750ml Premium</h3><p>Ideal for events & hotels.</p></div>
-    <div class="card"><h3>Custom Bottles</h3><p>Tailored branding & sizes.</p></div>
-  </div>
+
+<div class="section-title"><h2>Our Products</h2></div>
+<div class="section-line"></div>
+
+<div class="grid">
+
+<div class="card">
+<h3>500ml Classic</h3>
+<p>Daily hydration solution.</p>
+</div>
+
+<div class="card">
+<h3>750ml Premium</h3>
+<p>Events & hospitality.</p>
+</div>
+
+<div class="card">
+<h3>Custom Bottles</h3>
+<p>Brand printing.</p>
+</div>
+
+</div>
+
 </section>
 
 <!-- INDUSTRIES -->
 <section id="industries">
-  <div class="section-title"><h2>Industries We Serve</h2></div>
-  <div class="section-line"></div>
-  <div class="grid">
-    <div class="card">🏨 Hotels & Resorts</div>
-    <div class="card">🎪 Events & Exhibitions</div>
-    <div class="card">🏢 Corporate Offices</div>
-    <div class="card">🛒 Retail & FMCG</div>
-  </div>
+
+<div class="section-title"><h2>Industries We Serve</h2></div>
+<div class="section-line"></div>
+
+<div class="grid">
+
+<div class="card">🏨 Hotels</div>
+<div class="card">🎪 Events</div>
+<div class="card">🏢 Corporate</div>
+<div class="card">🛒 Retail</div>
+
+</div>
+
 </section>
 
 <!-- FEATURES -->
 <section id="features">
-  <div class="section-title"><h2>Sustainability Promise</h2></div>
-  <div class="section-line"></div>
-  <div class="grid">
-    <div class="card">🌱 100% Renewable Materials</div>
-    <div class="card">♻ Compostable & Biodegradable</div>
-    <div class="card">🌍 Reduced Carbon Footprint</div>
-    <div class="card">🧪 Food-Safe Certified</div>
-  </div>
+
+<div class="section-title"><h2>Sustainability</h2></div>
+<div class="section-line"></div>
+
+<div class="grid">
+
+<div class="card">🌱 Renewable</div>
+<div class="card">♻ Compostable</div>
+<div class="card">🌍 Low Carbon</div>
+<div class="card">🧪 Food Safe</div>
+
+</div>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-  <div class="section-title"><h2>Contact Us</h2></div>
-  <div class="section-line"></div>
-  <div class="grid">
-    <div class="card">
-      📧 vilaspaunikar9999@gmail.com<br><br>
-      📱 +91 7020230372
-    </div>
-  </div>
+
+<div class="section-title"><h2>Contact</h2></div>
+<div class="section-line"></div>
+
+<div class="grid">
+
+<div class="card">
+📧 vilaspaunikar9999@gmail.com<br><br>
+📱 +91 7020230372
+</div>
+
+</div>
+
 </section>
 
 <footer>
-  © 2026 EcoBottle | Sustainable Packaging for a Greener World
+© 2026 EcoBottle | Green Future Packaging
 </footer>
 
-<!-- FLOATING BUTTONS -->
+<!-- FLOAT -->
 <div class="floating">
-  <a class="whatsapp" href="https://wa.me/917020230372" target="_blank">💬</a>
-  <a class="email" href="mailto:vilaspaunikar9999@gmail.com">✉</a>
+<a class="whatsapp" href="https://wa.me/917020230372">💬</a>
+<a class="email" href="mailto:vilaspaunikar9999@gmail.com">✉</a>
 </div>
 
-<!-- PARALLAX -->
+<!-- EFFECTS -->
 <script>
-const bottle = document.getElementById('bottle');
-document.addEventListener('mousemove', e => {
-  const x = (window.innerWidth / 2 - e.pageX) / 30;
-  const y = (window.innerHeight / 2 - e.pageY) / 30;
-  bottle.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+
+/* 3D Bottle */
+const bottle=document.getElementById("bottle");
+
+document.addEventListener("mousemove",e=>{
+const x=(window.innerWidth/2-e.pageX)/25;
+const y=(window.innerHeight/2-e.pageY)/25;
+
+bottle.style.transform=
+`rotateY(${x}deg) rotateX(${y}deg)`;
 });
+
+
+/* Parallax Image */
+const imgBg=document.getElementById("imgBg");
+
+document.addEventListener("mousemove",e=>{
+const x=e.clientX/50;
+const y=e.clientY/50;
+
+imgBg.style.backgroundPosition=
+`${50+x}% ${50+y}%`;
+});
+
 </script>
 
 </body>
