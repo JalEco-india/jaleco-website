@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>EcoBottle | Sustainable Paper Bottles</title>
+<title>EcoBottle |India’s Trusted Eco-Friendly Paper Bottle Manufacturer
+|Sustainable Paper Bottles</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
 *{
 margin:0;
 padding:0;
@@ -28,22 +28,21 @@ position:fixed;
 inset:0;
 z-index:-5;
 }
-
 .video-bg video{
 width:100%;
 height:100%;
 object-fit:cover;
 opacity:.35;
 }
-
-/* IMAGE PARALLAX BACKGROUND */
+</div> <div class="bottle-3d" id="bottle"> <img src="Earth.jpg"> </div>
+/* IMAGE PARALLAX */
 .image-bg{
 position:fixed;
 inset:0;
-background:url("<img src="c922d17cb602100064ea28536dee6afa.jpg">") center/cover no-repeat;
+background:url("c922d17cb602100064ea28536dee6afa.jpg") center/cover no-repeat;
 z-index:-4;
 opacity:.25;
-transition:all .2s linear;
+transition:background-position .1s linear;
 }
 
 /* OVERLAY */
@@ -63,25 +62,20 @@ justify-content:space-between;
 align-items:center;
 position:sticky;
 top:0;
-backdrop-filter:blur(10px);
+backdrop-filter:blur(12px);
 z-index:10;
 }
-
 header h1{
 font-size:32px;
 color:#b9f6ca;
 }
-
 nav a{
 color:#e0f2f1;
 margin-left:22px;
 text-decoration:none;
 font-weight:500;
 }
-
-nav a:hover{
-color:#69f0ae;
-}
+nav a:hover{color:#69f0ae;}
 
 /* HERO */
 .hero{
@@ -91,23 +85,24 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 }
-
 .hero-text{
-max-width:560px;
+max-width:580px;
 }
-
 .hero-text h2{
-font-size:55px;
+font-size:56px;
 margin-bottom:20px;
 line-height:1.2;
 }
-
 .hero-text p{
 font-size:18px;
 color:#c8e6c9;
+margin-bottom:18px;
+}
+.hero-text .tagline{
+font-size:16px;
+color:#9ef2c7;
 margin-bottom:30px;
 }
-
 .btn{
 padding:14px 38px;
 background:#2ecc71;
@@ -117,21 +112,11 @@ text-decoration:none;
 font-weight:600;
 }
 
-.btn:hover{
-background:#00e676;
-}
-
 /* 3D BOTTLE */
 .bottle-3d{
-width:380px;
-animation:spin 20s infinite linear;
+width:360px;
+transform-style:preserve-3d;
 }
-
-@keyframes spin{
-from{transform:rotateY(0deg);}
-to{transform:rotateY(360deg);}
-}
-
 .bottle-3d img{
 width:100%;
 filter:drop-shadow(0 40px 60px rgba(0,0,0,.7));
@@ -143,18 +128,15 @@ padding:90px 10%;
 background:#f4fbf7;
 color:#13342a;
 }
-
 .section-title h2{
 text-align:center;
 font-size:36px;
-margin-bottom:15px;
 }
-
 .section-line{
 width:90px;
 height:4px;
 background:#00c853;
-margin:0 auto 40px;
+margin:15px auto 40px;
 border-radius:5px;
 }
 
@@ -164,7 +146,6 @@ display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
-
 .card{
 background:#fff;
 padding:35px;
@@ -173,11 +154,9 @@ text-align:center;
 box-shadow:0 15px 35px rgba(0,0,0,.15);
 transition:.4s;
 }
-
 .card:hover{
-transform:translateY(-12px) scale(1.03);
+transform:translateY(-10px) scale(1.03);
 }
-
 .card h3{
 color:#2e7d32;
 margin-bottom:10px;
@@ -193,7 +172,6 @@ flex-direction:column;
 gap:14px;
 z-index:50;
 }
-
 .floating a{
 width:56px;
 height:56px;
@@ -206,7 +184,6 @@ font-size:26px;
 text-decoration:none;
 box-shadow:0 10px 25px rgba(0,0,0,.4);
 }
-
 .whatsapp{background:#25D366;}
 .email{background:#e53935;}
 
@@ -218,18 +195,17 @@ text-align:center;
 padding:25px;
 }
 
+/* MOBILE */
 @media(max-width:900px){
 .hero{
 flex-direction:column;
 text-align:center;
 }
-
 .bottle-3d{
 margin-top:40px;
-width:280px;
+width:260px;
 }
 }
-
 </style>
 </head>
 
@@ -241,122 +217,86 @@ width:280px;
 <source src="https://cdn.pixabay.com/video/2020/08/09/46848-451404444_large.mp4" type="video/mp4">
 </video>
 </div>
-</div>
 
-<div class="bottle-3d" id="bottle">
-<img src="Earth.jpg">
-</div>
-<!-- IMAGE -->
 <div class="image-bg" id="imgBg"></div>
-
-<!-- OVERLAY -->
 <div class="overlay"></div>
 
 <header>
 <h1>EcoBottle</h1>
 <nav>
 <a href="#products">Products</a>
-<a href="#industries">Industries</a>
-<a href="#features">Sustainability</a>
+<a href="#why">Why Us</a>
+<a href="#process">Process</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-
 <div class="hero-text">
 <h2>Not Just a Bottle.<br>A Promise to Earth.</h2>
 
-<p>
-India’s trusted eco-friendly paper bottle manufacturer for sustainable brands.
+<p>We design next-generation paper bottles that help brands reduce plastic without compromising quality.</p>
+
+<p class="tagline">
+Crafted from renewable materials • Designed for circular economy • Trusted by conscious brands worldwide
 </p>
 
 <a href="#contact" class="btn">Get Bulk Quote</a>
 </div>
 
 <div class="bottle-3d" id="bottle">
-<img src="c922d17cb602100064ea28536dee6afa.jpg">
+<img src="<img src="c922d17cb602100064ea28536dee6afa.jpg">" alt="Eco Bottle">
 </div>
-
 </section>
 
 <!-- PRODUCTS -->
 <section id="products">
-
 <div class="section-title"><h2>Our Products</h2></div>
 <div class="section-line"></div>
-
 <div class="grid">
-
-<div class="card">
-<h3>500ml Classic</h3>
-<p>Daily hydration solution.</p>
+<div class="card"><h3>500ml Classic</h3><p>Perfect for daily hydration.</p></div>
+<div class="card"><h3>750ml Premium</h3><p>Hospitality & events.</p></div>
+<div class="card"><h3>Custom Bottles</h3><p>Branding & private labels.</p></div>
 </div>
-
-<div class="card">
-<h3>750ml Premium</h3>
-<p>Events & hospitality.</p>
-</div>
-
-<div class="card">
-<h3>Custom Bottles</h3>
-<p>Brand printing.</p>
-</div>
-
-</div>
-
 </section>
 
-<!-- INDUSTRIES -->
-<section id="industries">
-
-<div class="section-title"><h2>Industries We Serve</h2></div>
+<!-- WHY -->
+<section id="why">
+<div class="section-title"><h2>Why Choose EcoBottle</h2></div>
 <div class="section-line"></div>
-
 <div class="grid">
-
-<div class="card">🏨 Hotels</div>
-<div class="card">🎪 Events</div>
-<div class="card">🏢 Corporate</div>
-<div class="card">🛒 Retail</div>
-
+<div class="card">🌱 Plastic-free packaging</div>
+<div class="card">🏭 In-house manufacturing</div>
+<div class="card">📦 Bulk & export ready</div>
+<div class="card">🤝 Long-term partnerships</div>
 </div>
-
 </section>
 
-<!-- FEATURES -->
-<section id="features">
-
-<div class="section-title"><h2>Sustainability</h2></div>
+<!-- PROCESS -->
+<section id="process">
+<div class="section-title"><h2>Our Manufacturing Process</h2></div>
 <div class="section-line"></div>
-
 <div class="grid">
-
-<div class="card">🌱 Renewable</div>
-<div class="card">♻ Compostable</div>
-<div class="card">🌍 Low Carbon</div>
-<div class="card">🧪 Food Safe</div>
-
+<div class="card">Paper pulp forming</div>
+<div class="card">Food-grade lining</div>
+<div class="card">Quality inspection</div>
+<div class="card">Eco-safe packaging</div>
 </div>
-
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-
-<div class="section-title"><h2>Contact</h2></div>
+<div class="section-title"><h2>Contact Us</h2></div>
 <div class="section-line"></div>
-
 <div class="grid">
-
 <div class="card">
 📧 vilaspaunikar9999@gmail.com<br><br>
 📱 +91 7020230372
+📍 Nagpur, Maharashtra, India
+India’s Trusted Eco-Friendly Paper Bottle Manufacturer
 </div>
-
 </div>
-
 </section>
 
 <footer>
@@ -369,32 +309,16 @@ India’s trusted eco-friendly paper bottle manufacturer for sustainable brands.
 <a class="email" href="mailto:vilaspaunikar9999@gmail.com">✉</a>
 </div>
 
-<!-- EFFECTS -->
 <script>
-
-/* 3D Bottle */
 const bottle=document.getElementById("bottle");
-
-document.addEventListener("mousemove",e=>{
-const x=(window.innerWidth/2-e.pageX)/25;
-const y=(window.innerHeight/2-e.pageY)/25;
-
-bottle.style.transform=
-`rotateY(${x}deg) rotateX(${y}deg)`;
-});
-
-
-/* Parallax Image */
 const imgBg=document.getElementById("imgBg");
 
 document.addEventListener("mousemove",e=>{
-const x=e.clientX/50;
-const y=e.clientY/50;
-
-imgBg.style.backgroundPosition=
-`${50+x}% ${50+y}%`;
+const x=(window.innerWidth/2-e.clientX)/25;
+const y=(window.innerHeight/2-e.clientY)/25;
+bottle.style.transform=`rotateY(${x}deg) rotateX(${y}deg)`;
+imgBg.style.backgroundPosition=`${50+x}% ${50+y}%`;
 });
-
 </script>
 
 </body>
