@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>EcoBottle | Sustainable Paper Bottles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0e2f1f;
+  color:#1b3a2f;
+  overflow-x:hidden;
+}
+
+/* VIDEO BACKGROUND */
+.video-bg{
+  position:fixed;
+  inset:0;
+  z-index:-3;
+}
+.video-bg video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(.45);
+}
+
+/* 3D BLOBS */
+.bg-3d{
+  position:fixed;
+  inset:0;
+  z-index:-2;
+  perspective:1200px;
+}
+.blob{
+  position:absolute;
+  width:420px;
+  height:420px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#66bb6a,#1b5e20);
+  filter:blur(80px);
+  opacity:.35;
+  animation:float 20s infinite alternate ease-in-out;
+}
+.blob.one{top:-120px;left:-120px;}
+.blob.two{bottom:-150px;right:-120px;animation-delay:6s;}
+.blob.three{top:45%;left:60%;width:300px;height:300px;animation-delay:12s;}
+
+@keyframes float{
+  from{transform:translateZ(0) translateY(0);}
+  to{transform:translateZ(160px) translateY(-90px);}
+}
+
+/* HEADER */
+header{
+  padding:22px 10%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  color:#fff;
+  position:sticky;
+  top:0;
+  backdrop-filter:blur(10px);
+  z-index:10;
+}
+header h1{font-size:30px;}
+nav a{
+  color:#fff;
+  margin-left:22px;
+  text-decoration:none;
+}
+nav a:hover{text-decoration:underline;}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  padding:0 10%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:#fff;
+}
+.hero-text{
+  max-width:520px;
+}
+.hero-text h2{
+  font-size:52px;
+  margin-bottom:20px;
+}
+.hero-text p{
+  font-size:18px;
+  margin-bottom:30px;
+}
+.btn{
+  padding:14px 36px;
+  background:#43a047;
+  color:#fff;
+  border-radius:40px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* 3D ROTATING BOTTLE */
+.bottle-3d{
+  width:380px;
+  transform-style:preserve-3d;
+  animation:spin 18s infinite linear;
+  transition:transform .1s;
+}
+@keyframes spin{
+  from{transform:rotateY(0deg);}
+  to{transform:rotateY(360deg);}
+}
+.bottle-3d img{
+  width:100%;
+  filter:drop-shadow(0 40px 60px rgba(0,0,0,.6));
+}
+
+/* SECTIONS */
+section{
+  padding:90px 10%;
+  background:#f5f9f7;
+}
+.section-title h2{
+  text-align:center;
+  font-size:36px;
+  margin-bottom:40px;
+}
+
+/* GRID CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+.card{
+  background:#fff;
+  padding:35px;
+  border-radius:25px;
+  text-align:center;
+  box-shadow:0 20px 45px rgba(0,0,0,.15);
+  transition:.4s;
+}
+.card:hover{transform:translateY(-12px);}
+
+/* FLOATING CONTACT BUTTONS */
+.floating{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  z-index:50;
+}
+.floating a{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:26px;
+  text-decoration:none;
+  box-shadow:0 15px 30px rgba(0,0,0,.35);
+}
+.whatsapp{background:#25D366;}
+.email{background:#d93025;}
+
+footer{
+  background:#0e2f1f;
+  color:#fff;
+  text-align:center;
+  padding:25px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- VIDEO BACKGROUND (WORKING MP4 LINK) -->
+<div class="video-bg">
+  <video autoplay muted loop playsinline>
+    <source src="https://cdn.coverr.co/videos/coverr-flowing-water-3815/1080p.mp4" type="video/mp4">
+  </video>
+</div>
+
+<!-- 3D BACKGROUND BLOBS -->
+<div class="bg-3d">
+  <div class="blob one"></div>
+  <div class="blob two"></div>
+  <div class="blob three"></div>
+</div>
+
+<header>
+  <h1>EcoBottle</h1>
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h2>Not Just a Bottle.<br>A Promise to Earth.</h2>
+    <p>India’s next-generation eco-friendly paper bottle manufacturer.</p>
+    <a href="#contact" class="btn">Get Bulk Quote</a>
+  </div>
+
+  <div class="bottle-3d" id="bottle">
+    <img src="https://images.unsplash.com/photo-1582719478175-2aa1c1a1b9c8?auto=format&fit=crop&w=500&q=80" alt="Eco Bottle">
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="section-title"><h2>Our Products</h2></div>
+  <div class="grid">
+    <div class="card"><h3>500ml Classic</h3><p>Plastic-free hydration.</p></div>
+    <div class="card"><h3>750ml Premium</h3><p>Events & retail ready.</p></div>
+    <div class="card"><h3>Custom Bottles</h3><p>Your brand, your design.</p></div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-title"><h2>Why EcoBottle</h2></div>
+  <div class="grid">
+    <div class="card">🌱 100% Renewable</div>
+    <div class="card">♻ Compostable</div>
+    <div class="card">🌍 Low Carbon</div>
+    <div class="card">🎨 Brand Customisation</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-title"><h2>Contact Us</h2></div>
+  <div class="grid">
+    <div class="card">
+      📧 vilaspaunikar9999@gmail.com<br><br>
+      📱 +91 7020230372
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 EcoBottle | Sustainable Packaging for a Greener World
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating">
+  <a class="whatsapp" href="https://wa.me/917020230372" target="_blank">💬</a>
+  <a class="email" href="mailto:vilaspaunikar9999@gmail.com">✉</a>
+</div>
+
+<!-- MOUSE PARALLAX -->
+<script>
+const bottle = document.getElementById('bottle');
+document.addEventListener('mousemove', e => {
+  const x = (window.innerWidth / 2 - e.pageX) / 25;
+  const y = (window.innerHeight / 2 - e.pageY) / 25;
+  bottle.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+});
+</script>
+
+</body>
+</html>
