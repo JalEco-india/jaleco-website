@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>EcoBottle | Sustainable Paper Bottles</title>
+<title>EcoBottle | Sustainable Paper Bottles Manufacturer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,8 +16,8 @@
 }
 
 body{
-  background:#0e2f1f;
-  color:#1b3a2f;
+  background:#0b2a1c;
+  color:#ffffff;
   overflow-x:hidden;
 }
 
@@ -26,12 +26,13 @@ body{
   position:fixed;
   inset:0;
   z-index:-3;
+  background:linear-gradient(135deg,#0b2a1c,#114d2e);
 }
 .video-bg video{
   width:100%;
   height:100%;
   object-fit:cover;
-  filter:brightness(.45);
+  opacity:.45;
 }
 
 /* 3D BLOBS */
@@ -47,17 +48,17 @@ body{
   height:420px;
   border-radius:50%;
   background:linear-gradient(135deg,#66bb6a,#1b5e20);
-  filter:blur(80px);
+  filter:blur(90px);
   opacity:.35;
-  animation:float 20s infinite alternate ease-in-out;
+  animation:float 22s infinite alternate ease-in-out;
 }
 .blob.one{top:-120px;left:-120px;}
-.blob.two{bottom:-150px;right:-120px;animation-delay:6s;}
-.blob.three{top:45%;left:60%;width:300px;height:300px;animation-delay:12s;}
+.blob.two{bottom:-150px;right:-120px;animation-delay:7s;}
+.blob.three{top:50%;left:60%;width:300px;height:300px;animation-delay:14s;}
 
 @keyframes float{
   from{transform:translateZ(0) translateY(0);}
-  to{transform:translateZ(160px) translateY(-90px);}
+  to{transform:translateZ(180px) translateY(-100px);}
 }
 
 /* HEADER */
@@ -66,19 +67,19 @@ header{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  color:#fff;
   position:sticky;
   top:0;
   backdrop-filter:blur(10px);
   z-index:10;
 }
-header h1{font-size:30px;}
+header h1{font-size:30px;color:#e8f5e9;}
 nav a{
-  color:#fff;
+  color:#e8f5e9;
   margin-left:22px;
   text-decoration:none;
+  font-weight:500;
 }
-nav a:hover{text-decoration:underline;}
+nav a:hover{color:#81c784;}
 
 /* HERO */
 .hero{
@@ -87,32 +88,31 @@ nav a:hover{text-decoration:underline;}
   display:flex;
   align-items:center;
   justify-content:space-between;
-  color:#fff;
 }
-.hero-text{
-  max-width:520px;
-}
+.hero-text{max-width:560px;}
 .hero-text h2{
-  font-size:52px;
+  font-size:54px;
+  line-height:1.2;
   margin-bottom:20px;
 }
 .hero-text p{
   font-size:18px;
+  color:#dcedc8;
   margin-bottom:30px;
 }
 .btn{
-  padding:14px 36px;
+  padding:14px 38px;
   background:#43a047;
   color:#fff;
   border-radius:40px;
   text-decoration:none;
   font-weight:600;
 }
+.btn:hover{background:#2e7d32;}
 
-/* 3D ROTATING BOTTLE */
+/* 3D BOTTLE */
 .bottle-3d{
   width:380px;
-  transform-style:preserve-3d;
   animation:spin 18s infinite linear;
   transition:transform .1s;
 }
@@ -122,21 +122,29 @@ nav a:hover{text-decoration:underline;}
 }
 .bottle-3d img{
   width:100%;
-  filter:drop-shadow(0 40px 60px rgba(0,0,0,.6));
+  filter:drop-shadow(0 45px 70px rgba(0,0,0,.7));
 }
 
-/* SECTIONS */
+/* SECTION BASE */
 section{
   padding:90px 10%;
   background:#f5f9f7;
+  color:#1b3a2f;
 }
 .section-title h2{
   text-align:center;
   font-size:36px;
-  margin-bottom:40px;
+  margin-bottom:15px;
+}
+.section-line{
+  width:90px;
+  height:4px;
+  background:#43a047;
+  margin:0 auto 40px;
+  border-radius:5px;
 }
 
-/* GRID CARDS */
+/* GRID */
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -151,8 +159,9 @@ section{
   transition:.4s;
 }
 .card:hover{transform:translateY(-12px);}
+.card h3{color:#2e7d32;margin-bottom:10px;}
 
-/* FLOATING CONTACT BUTTONS */
+/* FLOATING BUTTONS */
 .floating{
   position:fixed;
   right:22px;
@@ -178,8 +187,8 @@ section{
 .email{background:#d93025;}
 
 footer{
-  background:#0e2f1f;
-  color:#fff;
+  background:#0b2a1c;
+  color:#e8f5e9;
   text-align:center;
   padding:25px;
 }
@@ -188,14 +197,14 @@ footer{
 
 <body>
 
-<!-- VIDEO BACKGROUND (WORKING MP4 LINK) -->
+<!-- VIDEO BACKGROUND (100% WORKING) -->
 <div class="video-bg">
   <video autoplay muted loop playsinline>
-    <source src="https://cdn.coverr.co/videos/coverr-flowing-water-3815/1080p.mp4" type="video/mp4">
+    <source src="https://cdn.pixabay.com/video/2020/08/09/46848-451404444_large.mp4" type="video/mp4">
   </video>
 </div>
 
-<!-- 3D BACKGROUND BLOBS -->
+<!-- BACKGROUND BLOBS -->
 <div class="bg-3d">
   <div class="blob one"></div>
   <div class="blob two"></div>
@@ -206,7 +215,8 @@ footer{
   <h1>EcoBottle</h1>
   <nav>
     <a href="#products">Products</a>
-    <a href="#features">Features</a>
+    <a href="#industries">Industries</a>
+    <a href="#features">Sustainability</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -215,7 +225,10 @@ footer{
 <section class="hero">
   <div class="hero-text">
     <h2>Not Just a Bottle.<br>A Promise to Earth.</h2>
-    <p>India’s next-generation eco-friendly paper bottle manufacturer.</p>
+    <p>
+      India’s leading eco-friendly paper bottle manufacturer helping brands
+      eliminate single-use plastic responsibly.
+    </p>
     <a href="#contact" class="btn">Get Bulk Quote</a>
   </div>
 
@@ -227,27 +240,42 @@ footer{
 <!-- PRODUCTS -->
 <section id="products">
   <div class="section-title"><h2>Our Products</h2></div>
+  <div class="section-line"></div>
   <div class="grid">
-    <div class="card"><h3>500ml Classic</h3><p>Plastic-free hydration.</p></div>
-    <div class="card"><h3>750ml Premium</h3><p>Events & retail ready.</p></div>
-    <div class="card"><h3>Custom Bottles</h3><p>Your brand, your design.</p></div>
+    <div class="card"><h3>500ml Classic</h3><p>Perfect for daily hydration.</p></div>
+    <div class="card"><h3>750ml Premium</h3><p>Ideal for events & hotels.</p></div>
+    <div class="card"><h3>Custom Bottles</h3><p>Tailored branding & sizes.</p></div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section id="industries">
+  <div class="section-title"><h2>Industries We Serve</h2></div>
+  <div class="section-line"></div>
+  <div class="grid">
+    <div class="card">🏨 Hotels & Resorts</div>
+    <div class="card">🎪 Events & Exhibitions</div>
+    <div class="card">🏢 Corporate Offices</div>
+    <div class="card">🛒 Retail & FMCG</div>
   </div>
 </section>
 
 <!-- FEATURES -->
 <section id="features">
-  <div class="section-title"><h2>Why EcoBottle</h2></div>
+  <div class="section-title"><h2>Sustainability Promise</h2></div>
+  <div class="section-line"></div>
   <div class="grid">
-    <div class="card">🌱 100% Renewable</div>
-    <div class="card">♻ Compostable</div>
-    <div class="card">🌍 Low Carbon</div>
-    <div class="card">🎨 Brand Customisation</div>
+    <div class="card">🌱 100% Renewable Materials</div>
+    <div class="card">♻ Compostable & Biodegradable</div>
+    <div class="card">🌍 Reduced Carbon Footprint</div>
+    <div class="card">🧪 Food-Safe Certified</div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
   <div class="section-title"><h2>Contact Us</h2></div>
+  <div class="section-line"></div>
   <div class="grid">
     <div class="card">
       📧 vilaspaunikar9999@gmail.com<br><br>
@@ -266,12 +294,12 @@ footer{
   <a class="email" href="mailto:vilaspaunikar9999@gmail.com">✉</a>
 </div>
 
-<!-- MOUSE PARALLAX -->
+<!-- PARALLAX -->
 <script>
 const bottle = document.getElementById('bottle');
 document.addEventListener('mousemove', e => {
-  const x = (window.innerWidth / 2 - e.pageX) / 25;
-  const y = (window.innerHeight / 2 - e.pageY) / 25;
+  const x = (window.innerWidth / 2 - e.pageX) / 30;
+  const y = (window.innerHeight / 2 - e.pageY) / 30;
   bottle.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
 });
 </script>
